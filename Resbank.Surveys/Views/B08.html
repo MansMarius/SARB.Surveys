@@ -5535,10 +5535,42 @@
         </font>
     </font>
 
+    <input type="button" onclick="getAllValues()" />
+
 
 
     <script src="../Scripts/jquery-2.1.4.min.js"></script>
-    <script>
+    <script>       
+
+        function getAllValues() {
+            var data = $('span').filter(function () {
+                return $(this).attr('xd:binding');
+            }).map(function (ob, i) {
+                return {
+                    Index: $(this).attr("xd:binding"),
+                    Data: $(this).val()
+                }
+            });
+
+            var url = '/api/values';
+            $.ajax({
+                type: "POST",
+                url: url,
+                data: JSON.stringify(data.get()),
+                dataType: 'json',
+                contentType: 'application/json',
+                crossDomain: true,
+                cache: false,
+                success: function () {
+
+                },
+                error: function (xhr, err) {
+                    alert("readyState: " + xhr.readyState + "\nstatus: " + xhr.status);
+                    alert("responseText: " + xhr.responseText);
+                }
+            });
+
+        }
 
 
         $(document).ready(function () {

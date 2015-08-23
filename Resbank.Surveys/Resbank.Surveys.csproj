@@ -73,7 +73,12 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Global.asax" />
+    <None Include="Packages\myschema.xsd">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="Scripts\jquery-2.1.4.intellisense.js" />
+    <Content Include="Packages\sampledata.xml" />
+    <Content Include="Packages\view1.xsl" />
     <Content Include="sampledata.xml" />
     <Content Include="Scripts\jquery-2.1.4.js" />
     <Content Include="Scripts\jquery-2.1.4.min.js" />

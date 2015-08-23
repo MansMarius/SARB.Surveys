@@ -1,0 +1,1135 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<xsd:schema targetNamespace="www.resbank.equilibrium.co.za" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:pc="http://schemas.microsoft.com/office/infopath/2007/PartnerControls" xmlns:ma="http://schemas.microsoft.com/office/2009/metadata/properties/metaAttributes" xmlns:d="http://schemas.microsoft.com/office/infopath/2009/WSSList/dataFields" xmlns:q="http://schemas.microsoft.com/office/infopath/2009/WSSList/queryFields" xmlns:dfs="http://schemas.microsoft.com/office/infopath/2003/dataFormSolution" xmlns:dms="http://schemas.microsoft.com/office/2009/documentManagement/types" xmlns:tns="http://tempuri.org/" xmlns:my="www.resbank.equilibrium.co.za" xmlns:xd="http://schemas.microsoft.com/office/infopath/2003" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:element name="B08">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element ref="my:SurveyId" minOccurs="0"/>
+				<xsd:element ref="my:InstitutionId" minOccurs="0"/>
+				<xsd:element ref="my:SurveyName" minOccurs="0"/>
+				<xsd:element ref="my:InstitutionName" minOccurs="0"/>
+				<xsd:element ref="my:FormId" minOccurs="0"/>
+				<xsd:element ref="my:FormName" minOccurs="0"/>
+				<xsd:element ref="my:FormVersion" minOccurs="0"/>
+				<xsd:element ref="my:OfficeName" minOccurs="0"/>
+				<xsd:element ref="my:OfficeContact" minOccurs="0"/>
+				<xsd:element ref="my:OfficeContactId" minOccurs="0"/>
+				<xsd:element ref="my:OfficeContactName" minOccurs="0"/>
+				<xsd:element ref="my:OfficeContactTel" minOccurs="0"/>
+				<xsd:element ref="my:OfficeContactExt" minOccurs="0"/>
+				<xsd:element ref="my:OfficeContactFax" minOccurs="0"/>
+				<xsd:element ref="my:OfficeContactEmail" minOccurs="0"/>
+				<xsd:element ref="my:InstitutionWebAddress" minOccurs="0"/>
+				<xsd:element ref="my:InstitutionCode" minOccurs="0"/>
+				<xsd:element ref="my:SurveyPeriod" minOccurs="0"/>
+				<xsd:element ref="my:SurveyDueDate" minOccurs="0"/>
+				<xsd:element ref="my:InstitutionAddress" minOccurs="0"/>
+				<xsd:element ref="my:ReturnStatus" minOccurs="0"/>
+				<xsd:element ref="my:Header" minOccurs="0"/>
+				<xsd:element ref="my:Table1" minOccurs="0"/>
+				<xsd:element ref="my:Table2" minOccurs="0"/>
+				<xsd:element ref="my:Table3" minOccurs="0"/>
+			</xsd:sequence>
+			<xsd:anyAttribute processContents="lax" namespace="http://www.w3.org/XML/1998/namespace"/>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="SurveyId" type="xsd:string"/>
+	<xsd:element name="InstitutionId" type="xsd:string"/>
+	<xsd:element name="SurveyName" type="xsd:string"/>
+	<xsd:element name="InstitutionName" type="xsd:string"/>
+	<xsd:element name="FormId" type="xsd:string"/>
+	<xsd:element name="FormName" type="xsd:string"/>
+	<xsd:element name="FormVersion" type="xsd:string"/>
+	<xsd:element name="OfficeName" type="xsd:string"/>
+	<xsd:element name="OfficeContact" type="xsd:string"/>
+	<xsd:element name="OfficeContactId" type="xsd:string"/>
+	<xsd:element name="OfficeContactName" type="xsd:string"/>
+	<xsd:element name="OfficeContactTel" type="xsd:string"/>
+	<xsd:element name="OfficeContactExt" type="xsd:string"/>
+	<xsd:element name="OfficeContactFax" type="xsd:string"/>
+	<xsd:element name="OfficeContactEmail" type="xsd:string"/>
+	<xsd:element name="InstitutionWebAddress" type="xsd:string"/>
+	<xsd:element name="InstitutionCode" type="xsd:string"/>
+	<xsd:element name="SurveyPeriod" type="xsd:string"/>
+	<xsd:element name="SurveyDueDate" type="xsd:string"/>
+	<xsd:element name="InstitutionAddress" type="xsd:string"/>
+	<xsd:element name="ReturnStatus" type="xsd:string"/>
+	<xsd:element name="Header">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element ref="my:NameOfAuthorisedOfficial" minOccurs="0"/>
+				<xsd:element ref="my:Tel" minOccurs="0"/>
+				<xsd:element ref="my:Ext" minOccurs="0"/>
+				<xsd:element ref="my:Fax" minOccurs="0"/>
+				<xsd:element ref="my:Email" minOccurs="0"/>
+				<xsd:element ref="my:WebAddress" minOccurs="0"/>
+				<xsd:element ref="my:EndDate" minOccurs="0"/>
+				<xsd:element ref="my:DueDate" minOccurs="0"/>
+				<xsd:element ref="my:Date" minOccurs="0"/>
+				<xsd:element ref="my:Name" minOccurs="0"/>
+				<xsd:element ref="my:AddressOfOrganisation" minOccurs="0"/>
+				<xsd:element ref="my:Signature" minOccurs="0"/>
+				<xsd:element ref="my:ReferenceNumber" minOccurs="0"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="NameOfAuthorisedOfficial" type="xsd:string"/>
+	<xsd:element name="Tel" type="xsd:string"/>
+	<xsd:element name="Ext" type="xsd:string"/>
+	<xsd:element name="Fax" type="xsd:string"/>
+	<xsd:element name="Email" type="xsd:string"/>
+	<xsd:element name="WebAddress" type="xsd:string"/>
+	<xsd:element name="EndDate" type="xsd:string"/>
+	<xsd:element name="DueDate" type="xsd:string"/>
+	<xsd:element name="Date" type="xsd:string"/>
+	<xsd:element name="Name" type="xsd:string"/>
+	<xsd:element name="AddressOfOrganisation" type="xsd:string"/>
+	<xsd:element name="Signature" type="xsd:string"/>
+	<xsd:element name="ReferenceNumber" type="xsd:string"/>
+	<xsd:element name="Table1">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element ref="my:Table1_Total" minOccurs="0"/>
+				<xsd:element ref="my:Table1_Country1" minOccurs="0"/>
+				<xsd:element ref="my:Table1_Country2" minOccurs="0"/>
+				<xsd:element ref="my:Table1_Country3" minOccurs="0"/>
+				<xsd:element ref="my:Table1_Country4" minOccurs="0"/>
+				<xsd:element ref="my:Table1_Country5" minOccurs="0"/>
+				<xsd:element ref="my:Table1_Country6" minOccurs="0"/>
+				<xsd:element ref="my:Table1_Country7" minOccurs="0"/>
+				<xsd:element ref="my:Table1_Country8" minOccurs="0"/>
+				<xsd:element ref="my:Table1_Country9" minOccurs="0"/>
+				<xsd:element ref="my:Table1_Country10" minOccurs="0"/>
+				<xsd:element ref="my:Table1_Country11" minOccurs="0"/>
+				<xsd:element ref="my:Table1_Country12" minOccurs="0"/>
+				<xsd:element ref="my:Table1_Country13" minOccurs="0"/>
+				<xsd:element ref="my:Table1_Country14" minOccurs="0"/>
+				<xsd:element ref="my:Table1_Country15" minOccurs="0"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="Table1_Total">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element ref="my:TOT_101" minOccurs="0"/>
+				<xsd:element ref="my:TOT_202" minOccurs="0"/>
+				<xsd:element ref="my:TOT_303" minOccurs="0"/>
+				<xsd:element ref="my:TOT_404" minOccurs="0"/>
+				<xsd:element ref="my:TOT_505" minOccurs="0"/>
+				<xsd:element ref="my:TOT_606" minOccurs="0"/>
+				<xsd:element ref="my:TOT_707" minOccurs="0"/>
+				<xsd:element ref="my:TOT_808" minOccurs="0"/>
+				<xsd:element ref="my:TOT_909" minOccurs="0"/>
+				<xsd:element ref="my:TOT_1010" minOccurs="0"/>
+				<xsd:element ref="my:TOT_1111" minOccurs="0"/>
+				<xsd:element ref="my:TOT_1212" minOccurs="0"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="TOT_101" nillable="true" type="xsd:double"/>
+	<xsd:element name="TOT_202" nillable="true" type="xsd:double"/>
+	<xsd:element name="TOT_303" nillable="true" type="xsd:double"/>
+	<xsd:element name="TOT_404" nillable="true" type="xsd:double"/>
+	<xsd:element name="TOT_505" nillable="true" type="xsd:double"/>
+	<xsd:element name="TOT_606" nillable="true" type="xsd:double"/>
+	<xsd:element name="TOT_707" nillable="true" type="xsd:double"/>
+	<xsd:element name="TOT_808" nillable="true" type="xsd:double"/>
+	<xsd:element name="TOT_909" nillable="true" type="xsd:double"/>
+	<xsd:element name="TOT_1010" nillable="true" type="xsd:double"/>
+	<xsd:element name="TOT_1111" nillable="true" type="xsd:double"/>
+	<xsd:element name="TOT_1212" nillable="true" type="xsd:double"/>
+	<xsd:element name="Table1_Country1">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element ref="my:COL1_101" minOccurs="0"/>
+				<xsd:element ref="my:COL1_202" minOccurs="0"/>
+				<xsd:element ref="my:COL1_303" minOccurs="0"/>
+				<xsd:element ref="my:COL1_404" minOccurs="0"/>
+				<xsd:element ref="my:COL1_505" minOccurs="0"/>
+				<xsd:element ref="my:COL1_606" minOccurs="0"/>
+				<xsd:element ref="my:COL1_707" minOccurs="0"/>
+				<xsd:element ref="my:COL1_808" minOccurs="0"/>
+				<xsd:element ref="my:COL1_909" minOccurs="0"/>
+				<xsd:element ref="my:COL1_1010" minOccurs="0"/>
+				<xsd:element ref="my:COL1_1111" minOccurs="0"/>
+				<xsd:element ref="my:COL1_1212" minOccurs="0"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="COL1_101" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL1_202" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL1_303" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL1_404" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL1_505" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL1_606" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL1_707" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL1_808" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL1_909" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL1_1010" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL1_1111" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL1_1212" nillable="true" type="xsd:double"/>
+	<xsd:element name="Table1_Country2">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element ref="my:COL2_101" minOccurs="0"/>
+				<xsd:element ref="my:COL2_202" minOccurs="0"/>
+				<xsd:element ref="my:COL2_303" minOccurs="0"/>
+				<xsd:element ref="my:COL2_404" minOccurs="0"/>
+				<xsd:element ref="my:COL2_505" minOccurs="0"/>
+				<xsd:element ref="my:COL2_606" minOccurs="0"/>
+				<xsd:element ref="my:COL2_707" minOccurs="0"/>
+				<xsd:element ref="my:COL2_808" minOccurs="0"/>
+				<xsd:element ref="my:COL2_909" minOccurs="0"/>
+				<xsd:element ref="my:COL2_1010" minOccurs="0"/>
+				<xsd:element ref="my:COL2_1111" minOccurs="0"/>
+				<xsd:element ref="my:COL2_1212" minOccurs="0"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="COL2_101" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL2_202" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL2_303" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL2_404" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL2_505" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL2_606" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL2_707" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL2_808" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL2_909" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL2_1010" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL2_1111" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL2_1212" nillable="true" type="xsd:double"/>
+	<xsd:element name="Table1_Country3">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element ref="my:COL3_101" minOccurs="0"/>
+				<xsd:element ref="my:COL3_202" minOccurs="0"/>
+				<xsd:element ref="my:COL3_303" minOccurs="0"/>
+				<xsd:element ref="my:COL3_404" minOccurs="0"/>
+				<xsd:element ref="my:COL3_505" minOccurs="0"/>
+				<xsd:element ref="my:COL3_606" minOccurs="0"/>
+				<xsd:element ref="my:COL3_707" minOccurs="0"/>
+				<xsd:element ref="my:COL3_808" minOccurs="0"/>
+				<xsd:element ref="my:COL3_909" minOccurs="0"/>
+				<xsd:element ref="my:COL3_1010" minOccurs="0"/>
+				<xsd:element ref="my:COL3_1111" minOccurs="0"/>
+				<xsd:element ref="my:COL3_1212" minOccurs="0"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="COL3_101" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL3_202" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL3_303" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL3_404" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL3_505" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL3_606" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL3_707" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL3_808" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL3_909" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL3_1010" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL3_1111" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL3_1212" nillable="true" type="xsd:double"/>
+	<xsd:element name="Table1_Country4">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element ref="my:COL4_101" minOccurs="0"/>
+				<xsd:element ref="my:COL4_202" minOccurs="0"/>
+				<xsd:element ref="my:COL4_303" minOccurs="0"/>
+				<xsd:element ref="my:COL4_404" minOccurs="0"/>
+				<xsd:element ref="my:COL4_505" minOccurs="0"/>
+				<xsd:element ref="my:COL4_606" minOccurs="0"/>
+				<xsd:element ref="my:COL4_707" minOccurs="0"/>
+				<xsd:element ref="my:COL4_808" minOccurs="0"/>
+				<xsd:element ref="my:COL4_909" minOccurs="0"/>
+				<xsd:element ref="my:COL4_1010" minOccurs="0"/>
+				<xsd:element ref="my:COL4_1111" minOccurs="0"/>
+				<xsd:element ref="my:COL4_1212" minOccurs="0"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="COL4_101" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL4_202" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL4_303" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL4_404" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL4_505" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL4_606" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL4_707" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL4_808" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL4_909" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL4_1010" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL4_1111" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL4_1212" nillable="true" type="xsd:double"/>
+	<xsd:element name="Table1_Country5">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element ref="my:COL5_101" minOccurs="0"/>
+				<xsd:element ref="my:COL5_202" minOccurs="0"/>
+				<xsd:element ref="my:COL5_303" minOccurs="0"/>
+				<xsd:element ref="my:COL5_404" minOccurs="0"/>
+				<xsd:element ref="my:COL5_505" minOccurs="0"/>
+				<xsd:element ref="my:COL5_606" minOccurs="0"/>
+				<xsd:element ref="my:COL5_707" minOccurs="0"/>
+				<xsd:element ref="my:COL5_808" minOccurs="0"/>
+				<xsd:element ref="my:COL5_909" minOccurs="0"/>
+				<xsd:element ref="my:COL5_1010" minOccurs="0"/>
+				<xsd:element ref="my:COL5_1111" minOccurs="0"/>
+				<xsd:element ref="my:COL5_1212" minOccurs="0"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="COL5_101" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL5_202" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL5_303" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL5_404" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL5_505" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL5_606" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL5_707" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL5_808" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL5_909" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL5_1010" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL5_1111" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL5_1212" nillable="true" type="xsd:double"/>
+	<xsd:element name="Table1_Country6">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element ref="my:COL6_101" minOccurs="0"/>
+				<xsd:element ref="my:COL6_202" minOccurs="0"/>
+				<xsd:element ref="my:COL6_303" minOccurs="0"/>
+				<xsd:element ref="my:COL6_404" minOccurs="0"/>
+				<xsd:element ref="my:COL6_505" minOccurs="0"/>
+				<xsd:element ref="my:COL6_606" minOccurs="0"/>
+				<xsd:element ref="my:COL6_707" minOccurs="0"/>
+				<xsd:element ref="my:COL6_808" minOccurs="0"/>
+				<xsd:element ref="my:COL6_909" minOccurs="0"/>
+				<xsd:element ref="my:COL6_1010" minOccurs="0"/>
+				<xsd:element ref="my:COL6_1111" minOccurs="0"/>
+				<xsd:element ref="my:COL6_1212" minOccurs="0"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="COL6_101" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL6_202" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL6_303" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL6_404" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL6_505" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL6_606" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL6_707" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL6_808" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL6_909" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL6_1010" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL6_1111" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL6_1212" nillable="true" type="xsd:double"/>
+	<xsd:element name="Table1_Country7">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element ref="my:COL7_101" minOccurs="0"/>
+				<xsd:element ref="my:COL7_202" minOccurs="0"/>
+				<xsd:element ref="my:COL7_303" minOccurs="0"/>
+				<xsd:element ref="my:COL7_404" minOccurs="0"/>
+				<xsd:element ref="my:COL7_505" minOccurs="0"/>
+				<xsd:element ref="my:COL7_606" minOccurs="0"/>
+				<xsd:element ref="my:COL7_707" minOccurs="0"/>
+				<xsd:element ref="my:COL7_808" minOccurs="0"/>
+				<xsd:element ref="my:COL7_909" minOccurs="0"/>
+				<xsd:element ref="my:COL7_1010" minOccurs="0"/>
+				<xsd:element ref="my:COL7_1111" minOccurs="0"/>
+				<xsd:element ref="my:COL7_1212" minOccurs="0"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="COL7_101" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL7_202" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL7_303" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL7_404" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL7_505" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL7_606" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL7_707" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL7_808" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL7_909" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL7_1010" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL7_1111" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL7_1212" nillable="true" type="xsd:double"/>
+	<xsd:element name="Table1_Country8">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element ref="my:COL8_101" minOccurs="0"/>
+				<xsd:element ref="my:COL8_202" minOccurs="0"/>
+				<xsd:element ref="my:COL8_303" minOccurs="0"/>
+				<xsd:element ref="my:COL8_404" minOccurs="0"/>
+				<xsd:element ref="my:COL8_505" minOccurs="0"/>
+				<xsd:element ref="my:COL8_606" minOccurs="0"/>
+				<xsd:element ref="my:COL8_707" minOccurs="0"/>
+				<xsd:element ref="my:COL8_808" minOccurs="0"/>
+				<xsd:element ref="my:COL8_909" minOccurs="0"/>
+				<xsd:element ref="my:COL8_1010" minOccurs="0"/>
+				<xsd:element ref="my:COL8_1111" minOccurs="0"/>
+				<xsd:element ref="my:COL8_1212" minOccurs="0"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="COL8_101" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL8_202" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL8_303" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL8_404" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL8_505" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL8_606" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL8_707" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL8_808" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL8_909" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL8_1010" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL8_1111" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL8_1212" nillable="true" type="xsd:double"/>
+	<xsd:element name="Table1_Country9">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element ref="my:COL9_101" minOccurs="0"/>
+				<xsd:element ref="my:COL9_202" minOccurs="0"/>
+				<xsd:element ref="my:COL9_303" minOccurs="0"/>
+				<xsd:element ref="my:COL9_404" minOccurs="0"/>
+				<xsd:element ref="my:COL9_505" minOccurs="0"/>
+				<xsd:element ref="my:COL9_606" minOccurs="0"/>
+				<xsd:element ref="my:COL9_707" minOccurs="0"/>
+				<xsd:element ref="my:COL9_808" minOccurs="0"/>
+				<xsd:element ref="my:COL9_909" minOccurs="0"/>
+				<xsd:element ref="my:COL9_1010" minOccurs="0"/>
+				<xsd:element ref="my:COL9_1111" minOccurs="0"/>
+				<xsd:element ref="my:COL9_1212" minOccurs="0"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="COL9_101" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL9_202" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL9_303" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL9_404" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL9_505" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL9_606" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL9_707" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL9_808" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL9_909" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL9_1010" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL9_1111" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL9_1212" nillable="true" type="xsd:double"/>
+	<xsd:element name="Table1_Country10">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element ref="my:COL10_101" minOccurs="0"/>
+				<xsd:element ref="my:COL10_202" minOccurs="0"/>
+				<xsd:element ref="my:COL10_303" minOccurs="0"/>
+				<xsd:element ref="my:COL10_404" minOccurs="0"/>
+				<xsd:element ref="my:COL10_505" minOccurs="0"/>
+				<xsd:element ref="my:COL10_606" minOccurs="0"/>
+				<xsd:element ref="my:COL10_707" minOccurs="0"/>
+				<xsd:element ref="my:COL10_808" minOccurs="0"/>
+				<xsd:element ref="my:COL10_909" minOccurs="0"/>
+				<xsd:element ref="my:COL10_1010" minOccurs="0"/>
+				<xsd:element ref="my:COL10_1111" minOccurs="0"/>
+				<xsd:element ref="my:COL10_1212" minOccurs="0"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="COL10_101" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL10_202" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL10_303" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL10_404" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL10_505" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL10_606" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL10_707" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL10_808" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL10_909" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL10_1010" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL10_1111" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL10_1212" nillable="true" type="xsd:double"/>
+	<xsd:element name="Table1_Country11">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element ref="my:COL11_101" minOccurs="0"/>
+				<xsd:element ref="my:COL11_202" minOccurs="0"/>
+				<xsd:element ref="my:COL11_303" minOccurs="0"/>
+				<xsd:element ref="my:COL11_404" minOccurs="0"/>
+				<xsd:element ref="my:COL11_505" minOccurs="0"/>
+				<xsd:element ref="my:COL11_606" minOccurs="0"/>
+				<xsd:element ref="my:COL11_707" minOccurs="0"/>
+				<xsd:element ref="my:COL11_808" minOccurs="0"/>
+				<xsd:element ref="my:COL11_909" minOccurs="0"/>
+				<xsd:element ref="my:COL11_1010" minOccurs="0"/>
+				<xsd:element ref="my:COL11_1111" minOccurs="0"/>
+				<xsd:element ref="my:COL11_1212" minOccurs="0"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="COL11_101" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL11_202" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL11_303" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL11_404" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL11_505" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL11_606" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL11_707" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL11_808" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL11_909" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL11_1010" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL11_1111" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL11_1212" nillable="true" type="xsd:double"/>
+	<xsd:element name="Table1_Country12">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element ref="my:Table1_CountryCode12" minOccurs="0"/>
+				<xsd:element ref="my:COL12_101" minOccurs="0"/>
+				<xsd:element ref="my:COL12_202" minOccurs="0"/>
+				<xsd:element ref="my:COL12_303" minOccurs="0"/>
+				<xsd:element ref="my:COL12_404" minOccurs="0"/>
+				<xsd:element ref="my:COL12_505" minOccurs="0"/>
+				<xsd:element ref="my:COL12_606" minOccurs="0"/>
+				<xsd:element ref="my:COL12_707" minOccurs="0"/>
+				<xsd:element ref="my:COL12_808" minOccurs="0"/>
+				<xsd:element ref="my:COL12_909" minOccurs="0"/>
+				<xsd:element ref="my:COL12_1010" minOccurs="0"/>
+				<xsd:element ref="my:COL12_1111" minOccurs="0"/>
+				<xsd:element ref="my:COL12_1212" minOccurs="0"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="Table1_CountryCode12" type="xsd:string"/>
+	<xsd:element name="COL12_101" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL12_202" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL12_303" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL12_404" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL12_505" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL12_606" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL12_707" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL12_808" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL12_909" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL12_1010" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL12_1111" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL12_1212" nillable="true" type="xsd:double"/>
+	<xsd:element name="Table1_Country13">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element ref="my:Table1_CountryCode13" minOccurs="0"/>
+				<xsd:element ref="my:COL13_101" minOccurs="0"/>
+				<xsd:element ref="my:COL13_202" minOccurs="0"/>
+				<xsd:element ref="my:COL13_303" minOccurs="0"/>
+				<xsd:element ref="my:COL13_404" minOccurs="0"/>
+				<xsd:element ref="my:COL13_505" minOccurs="0"/>
+				<xsd:element ref="my:COL13_606" minOccurs="0"/>
+				<xsd:element ref="my:COL13_707" minOccurs="0"/>
+				<xsd:element ref="my:COL13_808" minOccurs="0"/>
+				<xsd:element ref="my:COL13_909" minOccurs="0"/>
+				<xsd:element ref="my:COL13_1010" minOccurs="0"/>
+				<xsd:element ref="my:COL13_1111" minOccurs="0"/>
+				<xsd:element ref="my:COL13_1212" minOccurs="0"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="Table1_CountryCode13" type="xsd:string"/>
+	<xsd:element name="COL13_101" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL13_202" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL13_303" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL13_404" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL13_505" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL13_606" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL13_707" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL13_808" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL13_909" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL13_1010" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL13_1111" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL13_1212" nillable="true" type="xsd:double"/>
+	<xsd:element name="Table1_Country14">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element ref="my:Table1_CountryCode14" minOccurs="0"/>
+				<xsd:element ref="my:COL14_101" minOccurs="0"/>
+				<xsd:element ref="my:COL14_202" minOccurs="0"/>
+				<xsd:element ref="my:COL14_303" minOccurs="0"/>
+				<xsd:element ref="my:COL14_404" minOccurs="0"/>
+				<xsd:element ref="my:COL14_505" minOccurs="0"/>
+				<xsd:element ref="my:COL14_606" minOccurs="0"/>
+				<xsd:element ref="my:COL14_707" minOccurs="0"/>
+				<xsd:element ref="my:COL14_808" minOccurs="0"/>
+				<xsd:element ref="my:COL14_909" minOccurs="0"/>
+				<xsd:element ref="my:COL14_1010" minOccurs="0"/>
+				<xsd:element ref="my:COL14_1111" minOccurs="0"/>
+				<xsd:element ref="my:COL14_1212" minOccurs="0"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="Table1_CountryCode14" type="xsd:string"/>
+	<xsd:element name="COL14_101" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL14_202" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL14_303" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL14_404" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL14_505" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL14_606" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL14_707" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL14_808" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL14_909" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL14_1010" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL14_1111" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL14_1212" nillable="true" type="xsd:double"/>
+	<xsd:element name="Table1_Country15">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element ref="my:Table1_CountryCode15" minOccurs="0"/>
+				<xsd:element ref="my:COL15_101" minOccurs="0"/>
+				<xsd:element ref="my:COL15_202" minOccurs="0"/>
+				<xsd:element ref="my:COL15_303" minOccurs="0"/>
+				<xsd:element ref="my:COL15_404" minOccurs="0"/>
+				<xsd:element ref="my:COL15_505" minOccurs="0"/>
+				<xsd:element ref="my:COL15_606" minOccurs="0"/>
+				<xsd:element ref="my:COL15_707" minOccurs="0"/>
+				<xsd:element ref="my:COL15_808" minOccurs="0"/>
+				<xsd:element ref="my:COL15_909" minOccurs="0"/>
+				<xsd:element ref="my:COL15_1010" minOccurs="0"/>
+				<xsd:element ref="my:COL15_1111" minOccurs="0"/>
+				<xsd:element ref="my:COL15_1212" minOccurs="0"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="Table1_CountryCode15" type="xsd:string"/>
+	<xsd:element name="COL15_101" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL15_202" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL15_303" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL15_404" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL15_505" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL15_606" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL15_707" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL15_808" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL15_909" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL15_1010" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL15_1111" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL15_1212" nillable="true" type="xsd:double"/>
+	<xsd:element name="Table2">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element ref="my:Table2_Total" minOccurs="0"/>
+				<xsd:element ref="my:Table2_Country1" minOccurs="0"/>
+				<xsd:element ref="my:Table2_Country2" minOccurs="0"/>
+				<xsd:element ref="my:Table2_Country3" minOccurs="0"/>
+				<xsd:element ref="my:Table2_Country4" minOccurs="0"/>
+				<xsd:element ref="my:Table2_Country5" minOccurs="0"/>
+				<xsd:element ref="my:Table2_Country6" minOccurs="0"/>
+				<xsd:element ref="my:Table2_Country7" minOccurs="0"/>
+				<xsd:element ref="my:Table2_Country8" minOccurs="0"/>
+				<xsd:element ref="my:Table2_Country9" minOccurs="0"/>
+				<xsd:element ref="my:Table2_Country10" minOccurs="0"/>
+				<xsd:element ref="my:Table2_Country11" minOccurs="0"/>
+				<xsd:element ref="my:Table2_Country12" minOccurs="0"/>
+				<xsd:element ref="my:Table2_Country13" minOccurs="0"/>
+				<xsd:element ref="my:Table2_Country14" minOccurs="0"/>
+				<xsd:element ref="my:Table2_Country15" minOccurs="0"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="Table2_Total">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element ref="my:TOT_1301" minOccurs="0"/>
+				<xsd:element ref="my:TOT_1402" minOccurs="0"/>
+				<xsd:element ref="my:TOT_1503" minOccurs="0"/>
+				<xsd:element ref="my:TOT_1604" minOccurs="0"/>
+				<xsd:element ref="my:TOT_1705" minOccurs="0"/>
+				<xsd:element ref="my:TOT_1806" minOccurs="0"/>
+				<xsd:element ref="my:TOT_1907" minOccurs="0"/>
+				<xsd:element ref="my:TOT_2008" minOccurs="0"/>
+				<xsd:element ref="my:TOT_2109" minOccurs="0"/>
+				<xsd:element ref="my:TOT_2210" minOccurs="0"/>
+				<xsd:element ref="my:TOT_2311" minOccurs="0"/>
+				<xsd:element ref="my:TOT_2412" minOccurs="0"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="TOT_1301" nillable="true" type="xsd:double"/>
+	<xsd:element name="TOT_1402" nillable="true" type="xsd:double"/>
+	<xsd:element name="TOT_1503" nillable="true" type="xsd:double"/>
+	<xsd:element name="TOT_1604" nillable="true" type="xsd:double"/>
+	<xsd:element name="TOT_1705" nillable="true" type="xsd:double"/>
+	<xsd:element name="TOT_1806" nillable="true" type="xsd:double"/>
+	<xsd:element name="TOT_1907" nillable="true" type="xsd:double"/>
+	<xsd:element name="TOT_2008" nillable="true" type="xsd:double"/>
+	<xsd:element name="TOT_2109" nillable="true" type="xsd:double"/>
+	<xsd:element name="TOT_2210" nillable="true" type="xsd:double"/>
+	<xsd:element name="TOT_2311" nillable="true" type="xsd:double"/>
+	<xsd:element name="TOT_2412" nillable="true" type="xsd:double"/>
+	<xsd:element name="Table2_Country1">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element ref="my:COL1_1301" minOccurs="0"/>
+				<xsd:element ref="my:COL1_1402" minOccurs="0"/>
+				<xsd:element ref="my:COL1_1503" minOccurs="0"/>
+				<xsd:element ref="my:COL1_1604" minOccurs="0"/>
+				<xsd:element ref="my:COL1_1705" minOccurs="0"/>
+				<xsd:element ref="my:COL1_1806" minOccurs="0"/>
+				<xsd:element ref="my:COL1_1907" minOccurs="0"/>
+				<xsd:element ref="my:COL1_2008" minOccurs="0"/>
+				<xsd:element ref="my:COL1_2109" minOccurs="0"/>
+				<xsd:element ref="my:COL1_2210" minOccurs="0"/>
+				<xsd:element ref="my:COL1_2311" minOccurs="0"/>
+				<xsd:element ref="my:COL1_2412" minOccurs="0"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="COL1_1301" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL1_1402" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL1_1503" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL1_1604" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL1_1705" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL1_1806" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL1_1907" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL1_2008" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL1_2109" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL1_2210" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL1_2311" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL1_2412" nillable="true" type="xsd:double"/>
+	<xsd:element name="Table2_Country2">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element ref="my:COL2_1301" minOccurs="0"/>
+				<xsd:element ref="my:COL2_1402" minOccurs="0"/>
+				<xsd:element ref="my:COL2_1503" minOccurs="0"/>
+				<xsd:element ref="my:COL2_1604" minOccurs="0"/>
+				<xsd:element ref="my:COL2_1705" minOccurs="0"/>
+				<xsd:element ref="my:COL2_1806" minOccurs="0"/>
+				<xsd:element ref="my:COL2_1907" minOccurs="0"/>
+				<xsd:element ref="my:COL2_2008" minOccurs="0"/>
+				<xsd:element ref="my:COL2_2109" minOccurs="0"/>
+				<xsd:element ref="my:COL2_2210" minOccurs="0"/>
+				<xsd:element ref="my:COL2_2311" minOccurs="0"/>
+				<xsd:element ref="my:COL2_2412" minOccurs="0"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="COL2_1301" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL2_1402" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL2_1503" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL2_1604" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL2_1705" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL2_1806" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL2_1907" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL2_2008" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL2_2109" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL2_2210" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL2_2311" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL2_2412" nillable="true" type="xsd:double"/>
+	<xsd:element name="Table2_Country3">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element ref="my:COL3_1301" minOccurs="0"/>
+				<xsd:element ref="my:COL3_1402" minOccurs="0"/>
+				<xsd:element ref="my:COL3_1503" minOccurs="0"/>
+				<xsd:element ref="my:COL3_1604" minOccurs="0"/>
+				<xsd:element ref="my:COL3_1705" minOccurs="0"/>
+				<xsd:element ref="my:COL3_1806" minOccurs="0"/>
+				<xsd:element ref="my:COL3_1907" minOccurs="0"/>
+				<xsd:element ref="my:COL3_2008" minOccurs="0"/>
+				<xsd:element ref="my:COL3_2109" minOccurs="0"/>
+				<xsd:element ref="my:COL3_2210" minOccurs="0"/>
+				<xsd:element ref="my:COL3_2311" minOccurs="0"/>
+				<xsd:element ref="my:COL3_2412" minOccurs="0"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="COL3_1301" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL3_1402" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL3_1503" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL3_1604" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL3_1705" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL3_1806" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL3_1907" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL3_2008" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL3_2109" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL3_2210" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL3_2311" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL3_2412" nillable="true" type="xsd:double"/>
+	<xsd:element name="Table2_Country4">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element ref="my:COL4_1301" minOccurs="0"/>
+				<xsd:element ref="my:COL4_1402" minOccurs="0"/>
+				<xsd:element ref="my:COL4_1503" minOccurs="0"/>
+				<xsd:element ref="my:COL4_1604" minOccurs="0"/>
+				<xsd:element ref="my:COL4_1705" minOccurs="0"/>
+				<xsd:element ref="my:COL4_1806" minOccurs="0"/>
+				<xsd:element ref="my:COL4_1907" minOccurs="0"/>
+				<xsd:element ref="my:COL4_2008" minOccurs="0"/>
+				<xsd:element ref="my:COL4_2109" minOccurs="0"/>
+				<xsd:element ref="my:COL4_2210" minOccurs="0"/>
+				<xsd:element ref="my:COL4_2311" minOccurs="0"/>
+				<xsd:element ref="my:COL4_2412" minOccurs="0"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="COL4_1301" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL4_1402" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL4_1503" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL4_1604" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL4_1705" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL4_1806" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL4_1907" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL4_2008" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL4_2109" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL4_2210" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL4_2311" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL4_2412" nillable="true" type="xsd:double"/>
+	<xsd:element name="Table2_Country5">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element ref="my:COL5_1301" minOccurs="0"/>
+				<xsd:element ref="my:COL5_1402" minOccurs="0"/>
+				<xsd:element ref="my:COL5_1503" minOccurs="0"/>
+				<xsd:element ref="my:COL5_1604" minOccurs="0"/>
+				<xsd:element ref="my:COL5_1705" minOccurs="0"/>
+				<xsd:element ref="my:COL5_1806" minOccurs="0"/>
+				<xsd:element ref="my:COL5_1907" minOccurs="0"/>
+				<xsd:element ref="my:COL5_2008" minOccurs="0"/>
+				<xsd:element ref="my:COL5_2109" minOccurs="0"/>
+				<xsd:element ref="my:COL5_2210" minOccurs="0"/>
+				<xsd:element ref="my:COL5_2311" minOccurs="0"/>
+				<xsd:element ref="my:COL5_2412" minOccurs="0"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="COL5_1301" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL5_1402" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL5_1503" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL5_1604" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL5_1705" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL5_1806" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL5_1907" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL5_2008" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL5_2109" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL5_2210" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL5_2311" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL5_2412" nillable="true" type="xsd:double"/>
+	<xsd:element name="Table2_Country6">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element ref="my:COL6_1301" minOccurs="0"/>
+				<xsd:element ref="my:COL6_1402" minOccurs="0"/>
+				<xsd:element ref="my:COL6_1503" minOccurs="0"/>
+				<xsd:element ref="my:COL6_1604" minOccurs="0"/>
+				<xsd:element ref="my:COL6_1705" minOccurs="0"/>
+				<xsd:element ref="my:COL6_1806" minOccurs="0"/>
+				<xsd:element ref="my:COL6_1907" minOccurs="0"/>
+				<xsd:element ref="my:COL6_2008" minOccurs="0"/>
+				<xsd:element ref="my:COL6_2109" minOccurs="0"/>
+				<xsd:element ref="my:COL6_2210" minOccurs="0"/>
+				<xsd:element ref="my:COL6_2311" minOccurs="0"/>
+				<xsd:element ref="my:COL6_2412" minOccurs="0"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="COL6_1301" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL6_1402" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL6_1503" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL6_1604" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL6_1705" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL6_1806" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL6_1907" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL6_2008" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL6_2109" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL6_2210" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL6_2311" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL6_2412" nillable="true" type="xsd:double"/>
+	<xsd:element name="Table2_Country7">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element ref="my:COL7_1301" minOccurs="0"/>
+				<xsd:element ref="my:COL7_1402" minOccurs="0"/>
+				<xsd:element ref="my:COL7_1503" minOccurs="0"/>
+				<xsd:element ref="my:COL7_1604" minOccurs="0"/>
+				<xsd:element ref="my:COL7_1705" minOccurs="0"/>
+				<xsd:element ref="my:COL7_1806" minOccurs="0"/>
+				<xsd:element ref="my:COL7_1907" minOccurs="0"/>
+				<xsd:element ref="my:COL7_2008" minOccurs="0"/>
+				<xsd:element ref="my:COL7_2109" minOccurs="0"/>
+				<xsd:element ref="my:COL7_2210" minOccurs="0"/>
+				<xsd:element ref="my:COL7_2311" minOccurs="0"/>
+				<xsd:element ref="my:COL7_2412" minOccurs="0"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="COL7_1301" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL7_1402" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL7_1503" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL7_1604" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL7_1705" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL7_1806" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL7_1907" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL7_2008" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL7_2109" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL7_2210" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL7_2311" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL7_2412" nillable="true" type="xsd:double"/>
+	<xsd:element name="Table2_Country8">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element ref="my:COL8_1301" minOccurs="0"/>
+				<xsd:element ref="my:COL8_1402" minOccurs="0"/>
+				<xsd:element ref="my:COL8_1503" minOccurs="0"/>
+				<xsd:element ref="my:COL8_1604" minOccurs="0"/>
+				<xsd:element ref="my:COL8_1705" minOccurs="0"/>
+				<xsd:element ref="my:COL8_1806" minOccurs="0"/>
+				<xsd:element ref="my:COL8_1907" minOccurs="0"/>
+				<xsd:element ref="my:COL8_2008" minOccurs="0"/>
+				<xsd:element ref="my:COL8_2109" minOccurs="0"/>
+				<xsd:element ref="my:COL8_2210" minOccurs="0"/>
+				<xsd:element ref="my:COL8_2311" minOccurs="0"/>
+				<xsd:element ref="my:COL8_2412" minOccurs="0"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="COL8_1301" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL8_1402" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL8_1503" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL8_1604" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL8_1705" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL8_1806" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL8_1907" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL8_2008" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL8_2109" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL8_2210" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL8_2311" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL8_2412" nillable="true" type="xsd:double"/>
+	<xsd:element name="Table2_Country9">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element ref="my:COL9_1301" minOccurs="0"/>
+				<xsd:element ref="my:COL9_1402" minOccurs="0"/>
+				<xsd:element ref="my:COL9_1503" minOccurs="0"/>
+				<xsd:element ref="my:COL9_1604" minOccurs="0"/>
+				<xsd:element ref="my:COL9_1705" minOccurs="0"/>
+				<xsd:element ref="my:COL9_1806" minOccurs="0"/>
+				<xsd:element ref="my:COL9_1907" minOccurs="0"/>
+				<xsd:element ref="my:COL9_2008" minOccurs="0"/>
+				<xsd:element ref="my:COL9_2109" minOccurs="0"/>
+				<xsd:element ref="my:COL9_2210" minOccurs="0"/>
+				<xsd:element ref="my:COL9_2311" minOccurs="0"/>
+				<xsd:element ref="my:COL9_2412" minOccurs="0"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="COL9_1301" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL9_1402" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL9_1503" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL9_1604" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL9_1705" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL9_1806" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL9_1907" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL9_2008" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL9_2109" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL9_2210" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL9_2311" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL9_2412" nillable="true" type="xsd:double"/>
+	<xsd:element name="Table2_Country10">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element ref="my:Table2_CountryCode10" minOccurs="0"/>
+				<xsd:element ref="my:COL10_1301" minOccurs="0"/>
+				<xsd:element ref="my:COL10_1402" minOccurs="0"/>
+				<xsd:element ref="my:COL10_1503" minOccurs="0"/>
+				<xsd:element ref="my:COL10_1604" minOccurs="0"/>
+				<xsd:element ref="my:COL10_1705" minOccurs="0"/>
+				<xsd:element ref="my:COL10_1806" minOccurs="0"/>
+				<xsd:element ref="my:COL10_1907" minOccurs="0"/>
+				<xsd:element ref="my:COL10_2008" minOccurs="0"/>
+				<xsd:element ref="my:COL10_2109" minOccurs="0"/>
+				<xsd:element ref="my:COL10_2210" minOccurs="0"/>
+				<xsd:element ref="my:COL10_2311" minOccurs="0"/>
+				<xsd:element ref="my:COL10_2412" minOccurs="0"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="Table2_CountryCode10" type="xsd:string"/>
+	<xsd:element name="COL10_1301" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL10_1402" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL10_1503" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL10_1604" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL10_1705" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL10_1806" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL10_1907" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL10_2008" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL10_2109" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL10_2210" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL10_2311" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL10_2412" nillable="true" type="xsd:double"/>
+	<xsd:element name="Table2_Country11">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element ref="my:COL11_1301" minOccurs="0"/>
+				<xsd:element ref="my:COL11_1402" minOccurs="0"/>
+				<xsd:element ref="my:COL11_1503" minOccurs="0"/>
+				<xsd:element ref="my:COL11_1604" minOccurs="0"/>
+				<xsd:element ref="my:COL11_1705" minOccurs="0"/>
+				<xsd:element ref="my:COL11_1806" minOccurs="0"/>
+				<xsd:element ref="my:COL11_1907" minOccurs="0"/>
+				<xsd:element ref="my:COL11_2008" minOccurs="0"/>
+				<xsd:element ref="my:COL11_2109" minOccurs="0"/>
+				<xsd:element ref="my:COL11_2210" minOccurs="0"/>
+				<xsd:element ref="my:COL11_2311" minOccurs="0"/>
+				<xsd:element ref="my:COL11_2412" minOccurs="0"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="COL11_1301" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL11_1402" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL11_1503" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL11_1604" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL11_1705" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL11_1806" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL11_1907" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL11_2008" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL11_2109" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL11_2210" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL11_2311" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL11_2412" nillable="true" type="xsd:double"/>
+	<xsd:element name="Table2_Country12">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element ref="my:Table2_CountryCode12" minOccurs="0"/>
+				<xsd:element ref="my:COL12_1301" minOccurs="0"/>
+				<xsd:element ref="my:COL12_1402" minOccurs="0"/>
+				<xsd:element ref="my:COL12_1503" minOccurs="0"/>
+				<xsd:element ref="my:COL12_1604" minOccurs="0"/>
+				<xsd:element ref="my:COL12_1705" minOccurs="0"/>
+				<xsd:element ref="my:COL12_1806" minOccurs="0"/>
+				<xsd:element ref="my:COL12_1907" minOccurs="0"/>
+				<xsd:element ref="my:COL12_2008" minOccurs="0"/>
+				<xsd:element ref="my:COL12_2109" minOccurs="0"/>
+				<xsd:element ref="my:COL12_2210" minOccurs="0"/>
+				<xsd:element ref="my:COL12_2311" minOccurs="0"/>
+				<xsd:element ref="my:COL12_2412" minOccurs="0"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="Table2_CountryCode12" type="xsd:string"/>
+	<xsd:element name="COL12_1301" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL12_1402" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL12_1503" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL12_1604" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL12_1705" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL12_1806" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL12_1907" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL12_2008" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL12_2109" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL12_2210" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL12_2311" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL12_2412" nillable="true" type="xsd:double"/>
+	<xsd:element name="Table2_Country13">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element ref="my:Table2_CountryCode13" minOccurs="0"/>
+				<xsd:element ref="my:COL13_1301" minOccurs="0"/>
+				<xsd:element ref="my:COL13_1402" minOccurs="0"/>
+				<xsd:element ref="my:COL13_1503" minOccurs="0"/>
+				<xsd:element ref="my:COL13_1604" minOccurs="0"/>
+				<xsd:element ref="my:COL13_1705" minOccurs="0"/>
+				<xsd:element ref="my:COL13_1806" minOccurs="0"/>
+				<xsd:element ref="my:COL13_1907" minOccurs="0"/>
+				<xsd:element ref="my:COL13_2008" minOccurs="0"/>
+				<xsd:element ref="my:COL13_2109" minOccurs="0"/>
+				<xsd:element ref="my:COL13_2210" minOccurs="0"/>
+				<xsd:element ref="my:COL13_2311" minOccurs="0"/>
+				<xsd:element ref="my:COL13_2412" minOccurs="0"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="Table2_CountryCode13" type="xsd:string"/>
+	<xsd:element name="COL13_1301" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL13_1402" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL13_1503" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL13_1604" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL13_1705" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL13_1806" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL13_1907" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL13_2008" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL13_2109" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL13_2210" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL13_2311" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL13_2412" nillable="true" type="xsd:double"/>
+	<xsd:element name="Table2_Country14">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element ref="my:Table2_CountryCode14" minOccurs="0"/>
+				<xsd:element ref="my:COL14_1301" minOccurs="0"/>
+				<xsd:element ref="my:COL14_1402" minOccurs="0"/>
+				<xsd:element ref="my:COL14_1503" minOccurs="0"/>
+				<xsd:element ref="my:COL14_1604" minOccurs="0"/>
+				<xsd:element ref="my:COL14_1705" minOccurs="0"/>
+				<xsd:element ref="my:COL14_1806" minOccurs="0"/>
+				<xsd:element ref="my:COL14_1907" minOccurs="0"/>
+				<xsd:element ref="my:COL14_2008" minOccurs="0"/>
+				<xsd:element ref="my:COL14_2109" minOccurs="0"/>
+				<xsd:element ref="my:COL14_2210" minOccurs="0"/>
+				<xsd:element ref="my:COL14_2311" minOccurs="0"/>
+				<xsd:element ref="my:COL14_2412" minOccurs="0"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="Table2_CountryCode14" type="xsd:string"/>
+	<xsd:element name="COL14_1301" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL14_1402" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL14_1503" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL14_1604" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL14_1705" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL14_1806" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL14_1907" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL14_2008" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL14_2109" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL14_2210" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL14_2311" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL14_2412" nillable="true" type="xsd:double"/>
+	<xsd:element name="Table2_Country15">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element ref="my:Table2_CountryCode15" minOccurs="0"/>
+				<xsd:element ref="my:COL15_1301" minOccurs="0"/>
+				<xsd:element ref="my:COL15_1402" minOccurs="0"/>
+				<xsd:element ref="my:COL15_1503" minOccurs="0"/>
+				<xsd:element ref="my:COL15_1604" minOccurs="0"/>
+				<xsd:element ref="my:COL15_1705" minOccurs="0"/>
+				<xsd:element ref="my:COL15_1806" minOccurs="0"/>
+				<xsd:element ref="my:COL15_1907" minOccurs="0"/>
+				<xsd:element ref="my:COL15_2008" minOccurs="0"/>
+				<xsd:element ref="my:COL15_2109" minOccurs="0"/>
+				<xsd:element ref="my:COL15_2210" minOccurs="0"/>
+				<xsd:element ref="my:COL15_2311" minOccurs="0"/>
+				<xsd:element ref="my:COL15_2412" minOccurs="0"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="Table2_CountryCode15" type="xsd:string"/>
+	<xsd:element name="COL15_1301" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL15_1402" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL15_1503" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL15_1604" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL15_1705" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL15_1806" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL15_1907" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL15_2008" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL15_2109" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL15_2210" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL15_2311" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL15_2412" nillable="true" type="xsd:double"/>
+	<xsd:element name="Table3">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element ref="my:Table3_COL1" minOccurs="0"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="Table3_COL1">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element ref="my:COL1_2501" minOccurs="0"/>
+				<xsd:element ref="my:COL1_2602" minOccurs="0"/>
+				<xsd:element ref="my:COL1_2703" minOccurs="0"/>
+				<xsd:element ref="my:COL1_2804" minOccurs="0"/>
+				<xsd:element ref="my:COL1_2905" minOccurs="0"/>
+				<xsd:element ref="my:COL1_3006" minOccurs="0"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="COL1_2501" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL1_2602" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL1_2703" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL1_2804" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL1_2905" nillable="true" type="xsd:double"/>
+	<xsd:element name="COL1_3006" nillable="true" type="xsd:double"/>
+</xsd:schema>

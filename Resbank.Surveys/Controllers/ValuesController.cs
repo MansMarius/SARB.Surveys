@@ -13,7 +13,7 @@ namespace Resbank.Surveys.Controllers
     public class ValuesController : ApiController
     {
         // GET: api/Values
-        public IEnumerable<Values> Get()
+        public IEnumerable<Value> Get()
         {
             using (XmlReader reader = XmlReader.Create(@"c:\users\marius\documents\visual studio 2013\Projects\Resbank.Surveys\Resbank.Surveys\sampledata.xml"))
             {
@@ -27,10 +27,10 @@ namespace Resbank.Surveys.Controllers
 
 
                 var list = (from xcv in list1
-                            select new Values
+                            select new Value
                             {
                                 Index = xcv.Name.LocalName.Replace("COL", "").ToString(),
-                                Value = xcv.Value
+                                Data = xcv.Value
                             }).ToList();
                 return list;
             }
@@ -42,9 +42,25 @@ namespace Resbank.Surveys.Controllers
             return "value";
         }
 
-        // POST: api/Values
-        public void Post([FromBody]string value)
+        [HttpPost]
+        public void Post([FromBody]List<Value> values)
         {
+            var x = values;
+
+            XmlDocument document = new XmlDocument();
+            document.Load(@"c:\users\marius\documents\visual studio 2013\Projects\Resbank.Surveys\Resbank.Surveys\sampledata.xml");
+            XPathNavigator navigator = document.CreateNavigator();
+
+            XmlNamespaceManager manager = new XmlNamespaceManager(navigator.NameTable);
+            manager.AddNamespace("my", "www.resbank.equilibrium.co.za");
+
+            foreach (Value val in values)
+            {
+                XPathNavigator nav = navigator.SelectSingleNode(val.Index, manager);
+                if(nav != null)
+                    nav.SetValue(val.Data);                
+            }
+
         }
 
         // PUT: api/Values/5
@@ -58,9 +74,18 @@ namespace Resbank.Surveys.Controllers
         }
     }
 
-    public class Values
+    public class Value
     {
         public string Index;
-        public string Value;
+        public string Data;
+    }
+
+    public class sdfasdf
+    {
+        int ID;
+        Guid Patient_ID;
+        public string Table_ID;
+        public int Checksum;
+        public DateTime LastModified;
     }
 }
