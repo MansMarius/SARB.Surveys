@@ -48,18 +48,24 @@ namespace Resbank.Surveys.Controllers
             var x = values;
 
             XmlDocument document = new XmlDocument();
+            
             document.Load(@"c:\users\marius\documents\visual studio 2013\Projects\Resbank.Surveys\Resbank.Surveys\sampledata.xml");
             XPathNavigator navigator = document.CreateNavigator();
+                
+            navigator.MoveToRoot();
 
             XmlNamespaceManager manager = new XmlNamespaceManager(navigator.NameTable);
             manager.AddNamespace("my", "www.resbank.equilibrium.co.za");
 
             foreach (Value val in values)
             {
-                XPathNavigator nav = navigator.SelectSingleNode(val.Index, manager);
-                if(nav != null)
-                    nav.SetValue(val.Data);                
+                XPathNavigator nav = navigator.SelectSingleNode("//" + val.Index, manager);
+                if (nav != null && val.Data != null)
+                    nav.SetValue(val.Data);
             }
+                
+            document.Save(@"c:\users\marius\documents\visual studio 2013\Projects\Resbank.Surveys\Resbank.Surveys\sampledata.xml");
+            
 
         }
 
