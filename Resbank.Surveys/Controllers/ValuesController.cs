@@ -60,7 +60,7 @@ namespace Resbank.Surveys.Controllers
             foreach (Value val in values)
             {
                 XPathNavigator nav = navigator.SelectSingleNode("//" + val.Index, manager);
-                if (nav != null && val.Data != null)
+                if (nav != null && val.Data != null & val.Data != string.Empty)
                     nav.SetValue(val.Data);
             }
                 

@@ -13,14 +13,14 @@ namespace Resbank.Surveys.Controllers
         // GET: api/Forms
         public string Get()
         {
-            string HTML = File.ReadAllText(@"c:\users\marius\documents\visual studio 2013\Projects\Resbank.Surveys\Resbank.Surveys\Views\Forms\B08v1.txt");
+            string HTML = File.ReadAllText(@"c:\users\marius\documents\visual studio 2013\Projects\Resbank.Surveys\Resbank.Surveys\Views\Forms\B08v1.html");
             return HTML;
         }
 
         // GET: api/Forms/5
         public string Get(string FormName)
         {
-            string HTML = File.ReadAllText(@"c:\users\marius\documents\visual studio 2013\Projects\Resbank.Surveys\Resbank.Surveys\Views\Forms\B08v1.txt");
+            string HTML = File.ReadAllText(@"c:\users\marius\documents\visual studio 2013\Projects\Resbank.Surveys\Resbank.Surveys\Views\Forms\B08v1.html");
             return HTML;
         }
     }
