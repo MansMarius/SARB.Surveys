@@ -61,7 +61,12 @@ namespace Resbank.Surveys.Controllers
             {
                 XPathNavigator nav = navigator.SelectSingleNode("//" + val.Index, manager);
                 if (nav != null && val.Data != null & val.Data != string.Empty)
-                    nav.SetValue(val.Data);
+                {
+                    if (val.Data == "654321")
+                        val.Data = "654321";
+
+                    nav.SetValue(val.Data.Trim());
+                }
             }
                 
             document.Save(@"c:\users\marius\documents\visual studio 2013\Projects\Resbank.Surveys\Resbank.Surveys\sampledata.xml");

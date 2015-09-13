@@ -37,7 +37,7 @@
 	</my:Header>
 	<my:Table1>
 		<my:Table1_Total>
-			<my:TOT_101/>
+      <my:TOT_101></my:TOT_101>
 			<my:TOT_202/>
 			<my:TOT_303/>
 			<my:TOT_404/>
@@ -51,7 +51,7 @@
 			<my:TOT_1212/>
 		</my:Table1_Total>
 		<my:Table1_Country1>
-			<my:COL1_101/>
+      <my:COL1_101>1234123</my:COL1_101>
 			<my:COL1_202/>
 			<my:COL1_303/>
 			<my:COL1_404/>

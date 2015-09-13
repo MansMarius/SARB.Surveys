@@ -76,8 +76,7 @@
       </my:TOT_1212>
     </my:Table1_Total>
     <my:Table1_Country1>
-      <my:COL1_101>
-      </my:COL1_101>
+      <my:COL1_101>1234</my:COL1_101>
       <my:COL1_202>
       </my:COL1_202>
       <my:COL1_303>
@@ -102,8 +101,7 @@
       </my:COL1_1212>
     </my:Table1_Country1>
     <my:Table1_Country2>
-      <my:COL2_101>
-      </my:COL2_101>
+      <my:COL2_101>654321</my:COL2_101>
       <my:COL2_202>
       </my:COL2_202>
       <my:COL2_303>
@@ -130,8 +128,7 @@
     <my:Table1_Country3>
       <my:COL3_101>
       </my:COL3_101>
-      <my:COL3_202>
-      </my:COL3_202>
+      <my:COL3_202>342234</my:COL3_202>
       <my:COL3_303>
       </my:COL3_303>
       <my:COL3_404>

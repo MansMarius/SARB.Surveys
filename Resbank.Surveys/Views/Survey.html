@@ -868,6 +868,7 @@
     <form id="TheForm"></form>
 
         <input type="button" onclick="getAllValues()" />
+        <input type="button" onclick="Validate()" />
 
 
 
@@ -882,7 +883,7 @@
                 }).map(function (ob, i) {
                     return {
                         Index: $(this).attr("xd:binding"),
-                        Data: $(this).html()
+                        Data: $(this).val()
                     }
                 });
 
@@ -909,25 +910,29 @@
             function Validate() {
                 var sum = 0;
 
-                var Total = $("#TOT_101").text() || 0;
-                var Col1 = +$("#1_101").text() || 0;
+                var Total = $("#TOT_101").val() || 0;
+
+                var Col1 = +$("#1_101").val() || 0;
                 sum += Col1;
-                var Col2 = +$("#2_101").text() || 0;
+                var Col2 = +$("#2_101").val() || 0;
                 sum += Col2;
-                var Col3 = +$("#3_101").text() || 0;
+                var Col3 = +$("#3_101").val() || 0;
                 sum += Col3;
-                var Col4 = +$("#4_101").text() || 0;
+                var Col4 = +$("#4_101").val() || 0;
                 sum += Col4;
-                var Col5 = +$("#5_101").text() || 0;
+                var Col5 = +$("#5_101").val() || 0;
                 sum += Col5;
-                var Col6 = +$("#6_101").text() || 0;
+                var Col6 = +$("#6_101").val() || 0;
                 sum += Col6;
 
-                if (Total != sum)
+                if (Total != sum) {
                     $("#TOT_101").addClass('valueError');
-                else
+                    return false;
+                }
+                else {
                     $("#TOT_101").removeClass('valueError');
-
+                    return true;
+                }
             }
 
 
@@ -942,19 +947,8 @@
                     success: function (data) {
                         $("#TheForm").html(data);
                     }
-                });
-
-              
-                // Get the form data and insert it into the DOM
-                var uri = '/api/values';
-                $.getJSON(uri)
-                    .done(function (data) {
-                        $.each(data, function (key, item) {
-
-                            var index = item.Index;
-                            $('#' + index).html(item.Value);
-                        });
-                    });
+                });              
+            
 
 
                 // Fix up html
@@ -977,17 +971,30 @@
 
                     id = id.replace(/\COL/g, '');
 
-                    $(this).closest("div").html('<input style="width:98%" id="' + id + '" xd:binding="' + selector + '" type="text" onkeypress="validate(event)" />');
+                    $(this).closest("div").html('<input value="" style="width:98%" id="' + id + '" xd:binding="' + selector + '" type="text" onkeypress="validate(event)" />');
 
-                    //$(this).attr('id', id);
-                    //$(this).attr('name', 'input' + id);
-                   
-                    //// The text boxes are to big
-                    //$(this).css({
-                    //    width: '95%'
-                    //});
-                });               
+               
+                });
+
+
+                uri = '/api/values';
+
+                $.ajax({
+                    url: uri,
+                    async: false,
+                    success: function (data) {
+                        $.each(data, function (key, item) {
+
+                            var index = item.Index;
+                            $('#' + index).val(item.Data);
+                        });
+                    }
+                });
+
             });
+
+
+        
 
             function validate(evt) {
                 var theEvent = evt || window.event;
